@@ -10,9 +10,9 @@ library(sf)
 library(mapview)  # For mapshot
 
 # Load data
-Pre_Data <- read_excel("rsconnect/shinyapps.io/pcyejp-ali-rezaee/Pre_Data.xlsx")
-Well_Info <- read_excel("rsconnect/shinyapps.io/pcyejp-ali-rezaee/Well_Point2.xlsx")
-aquifer_shapefile <- st_read("rsconnect/shinyapps.io/pcyejp-ali-rezaee/Aquifer_Clip_Union.shp")
+Pre_Data <- read_excel("/Pre_Data.xlsx")
+Well_Info <- read_excel("/Well_Point2.xlsx")
+aquifer_shapefile <- st_read("/Aquifer_Clip_Union.shp")
 
 # Validate and transform aquifer shapefile
 if (any(!st_is_valid(aquifer_shapefile))) {
