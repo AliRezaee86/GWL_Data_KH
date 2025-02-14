@@ -1,3 +1,5 @@
+install.packages(c("shiny", "ggplot2", "dplyr", "readxl", "openxlsx", "tidyr", "leaflet", "sf", "mapview"))
+
 # Load required libraries
 library(shiny)
 library(ggplot2)
