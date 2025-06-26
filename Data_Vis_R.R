@@ -11,9 +11,9 @@ library(tidyr)
 library(sf)
 
 # Load data
-Pre_Data <- read_excel("G:/Milirati_Project/Formatted_Wells_Data/Data_Clean/Pre_Data.xlsx")
-Well_Info <- read_excel("G:/Milirati_Project/Formatted_Wells_Data/Data_Clean/Well_Point2.xlsx")
-aquifer_shapefile <- st_read("G:/Milirati_Project/ROI/ROI+AQ/Aquifer_Clip_Union.shp")
+Pre_Data <- read_excel("data/Pre_Data.xlsx")
+Well_Info <- read_excel("data/Well_Point2.xlsx")
+aquifer_shapefile <- st_read("data/Aquifer_Clip_Union.shp")
 
 # Ensure shapefile validity
 if (any(!st_is_valid(aquifer_shapefile))) {
